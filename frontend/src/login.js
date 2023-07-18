@@ -1,4 +1,4 @@
-import React,  { useEffect, useState } from 'react';
+import React,  {useState } from 'react';
 // import logo from './logo_sonatrach.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css';
@@ -23,13 +23,14 @@ const Login = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          
         },
         body: JSON.stringify({ username, password }),
       });
   
       if (response.ok) {
         // Successful login
-        setLoginError('');
+        setLoginError('login successful');
         // Redirect to a different page or perform other actions
       } else {
         // Invalid credentials

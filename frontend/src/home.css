@@ -1,5 +1,4 @@
 html{
-    background-color: rgb(255, 255, 255);
     
     overflow-x: hidden;
     
@@ -9,25 +8,55 @@ html{
   overflow: hidden;
   position: fixed;
   top: 0;
-  height: 8%;
+  padding: 1%;
+  height: 10%;
   width: 100%;
   z-index: 99;
+  box-shadow: 0 15px 255px rgba(0,0,0,.6);
   
 }
 .sidebar {
     width: 250px;
     height: 100%;
-    top: 8%;
+    top: 10%;
     position: fixed;
     background-color:  #ff8500;
+    border: 3px solid black;
+    border-top: none;
+    border-left: none;
+   
+  
   }
+
+.collapse {
+  transform: translateX(0%);
+}
+
+.sidebar ul {
+  padding-left: 0%;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding-left: 1%;
+  padding: 15px 15px;
+  border-bottom: 3px solid black;
+}
+
+
+.sidebar ul li:hover {
+  background-color: black;
+  color: #ff8500;
+}
+
+
 
   .form-box {
     position: relative;
     height: 70%;
     top: 45%;
     bottom: 40%;
-    left: 75%;
+    left: 65%;
     width: 70%;
     padding: 40px;
     transform: translate(-50%, -50%);
@@ -39,6 +68,10 @@ html{
   }
 
   .img-fluid {
-    width: 13%;
+    width: 25%;
     
+}
+
+.navbar-brand{
+  width: 11%;
 }
